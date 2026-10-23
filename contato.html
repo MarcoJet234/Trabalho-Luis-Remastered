@@ -1,0 +1,170 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - TECHBREAKER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header-principal">
+
+    <div class="logo-area">
+        <h1>TECHBREAKER</h1>
+        <h2>CYBERSEGURADORAS</h2>
+    </div>
+
+    <nav class="menu-navegacao">
+        <a href="index.html" class="active">Início</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <a href="login.html" class="btn-login">LOGIN</a>
+
+</header>
+
+    <main class="container-conteudo">
+
+        <div class="titulo-secao">
+            <h2>Entre em contato conosco</h2>
+            <p>
+                Sua segurança digital começa aqui.
+                Nossa equipe está pronta para ajudar sua empresa
+                a encontrar as melhores soluções de proteção.
+            </p>
+        </div>
+
+        <div class="grid-contato">
+
+            <div class="card-info">
+                <h3>Central de Atendimento</h3>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    contato.techbreaker@gmail.com
+                </p>
+
+                <p>
+                    <strong>Telefone:</strong><br>
+                    (41) 99999-1234
+                </p>
+
+                <p>
+                    <strong>Endereço:</strong><br>
+                    Rua das Flores, 123 - Centro
+                </p>
+
+                <p>
+                    <strong>Horário de Atendimento:</strong><br>
+                    Segunda a Sexta, das 07h às 18h
+                </p>
+
+                <h3>Como podemos ajudar?</h3>
+
+                <p>
+                    Nossa equipe pode orientar você na escolha
+                    de planos de cibersegurança, esclarecer dúvidas
+                    sobre nossos serviços e apresentar soluções
+                    para proteger os dados da sua empresa.
+                </p>
+            </div>
+
+            <form class="form-contato"
+                  onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+
+                <h3>Envie uma mensagem</h3>
+
+                <p>
+                    Preencha os campos abaixo para entrar em contato
+                    com nossa equipe.
+                </p>
+
+                <div class="campo-form">
+                    <label for="nome">Nome Completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seuemail@empresa.com"
+                        required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="empresa">Nome da Empresa</label>
+                    <input
+                        type="text"
+                        id="empresa"
+                        name="empresa"
+                        placeholder="Digite o nome da sua empresa">
+                </div>
+
+                <div class="campo-form">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="planos">Conhecer os planos</option>
+                        <option value="suporte">Suporte técnico</option>
+                        <option value="orcamento">Solicitar orçamento</option>
+                        <option value="duvidas">Outras dúvidas</option>
+                    </select>
+                </div>
+
+                <div class="campo-form">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        placeholder="Descreva como podemos ajudar"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">
+                    Enviar Mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="informacoes-seguranca">
+            <h2>Compromisso com sua segurança</h2>
+
+            <p>
+                Na TECHBREAKER, acreditamos que a proteção digital
+                é essencial para o crescimento de qualquer negócio.
+                Nosso objetivo é ajudar empresas a reduzir riscos,
+                proteger informações e fortalecer sua infraestrutura.
+            </p>
+
+            <p>
+                Entre em contato para conhecer nossas soluções
+                e descobrir qual plano atende melhor às necessidades
+                da sua empresa.
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="footer-principal">
+        <p>
+            © 2026 TechBreaker Cyberseguradoras -
+            Segurança máxima para o seu negócio.
+        </p>
+        <p>Protegendo seus dados, fortalecendo seu futuro.</p>
+    </footer>
+</body>
+</html>
+```

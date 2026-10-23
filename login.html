@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TECHBREAKER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-area">
+            <h1>TECHBREAKER</h1>
+            <h2>CYBERSEGURADORAS</h2>
+        </div>
+
+        <nav class="menu-navegacao">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="login.html" class="active">Login</a>
+        </nav>
+    </header>
+
+    <main class="container-login">
+
+        <div class="card-login">
+
+            <h2>Acesso ao Sistema</h2>
+
+            <p class="texto-login">
+                Entre na sua conta para acessar a área do cliente.
+            </p>
+
+            <form class="form-login"
+                  onsubmit="event.preventDefault(); alert('Login demonstrativo. Sistema de autenticação ainda não configurado.');">
+
+                <div class="campo-form">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="username"
+                        required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <div class="opcoes-login">
+                    <label>
+                        <input type="checkbox" name="lembrar">
+                        Lembrar meu acesso
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-enviar">
+                    Entrar
+                </button>
+
+            </form>
+
+            <div class="rodape-login">
+                <p>Ainda não possui uma conta?</p>
+                <a href="contato.html">Entre em contato conosco</a>
+            </div>
+
+            <p class="aviso-login">
+                <strong>Área restrita:</strong>
+                acesso destinado a clientes autorizados.
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer class="footer-principal">
+        <p>
+            © 2026 TechBreaker Cyberseguradoras -
+            Segurança máxima para o seu negócio.
+        </p>
+        <p>Protegendo seus dados, fortalecendo seu futuro.</p>
+    </footer>
+
+</body>
+</html>
